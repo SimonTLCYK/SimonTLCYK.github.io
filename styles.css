@@ -1,0 +1,136 @@
+:root {
+  color-scheme: normal;
+  --background-color: #f5f5ff;
+  --border-color: #aab;
+  --text-color: #111;
+  --alt-text-color: #222;
+  --banner-background-color: #e5e5ef;
+  --button-background-color: #88aaee;
+}
+
+body {
+  background-color: #efeff5;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --background-color: #050810;
+    --border-color: #334;
+    --text-color: #eee;
+    --alt-text-color: #aaa;
+    --banner-background-color: #181820;
+    --button-background-color: #303080;
+  }
+
+  body {
+    background-color: #111;
+  }
+}
+
+ul{
+  margin-left: -1em;
+}
+
+main {
+  width: min(1000px, 90%);
+  margin: auto;
+  color: var(--text-color);
+}
+
+#intro {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-top: 0.1em;
+  background-color: var(--banner-background-color);
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  padding: 1em;
+  background-color: var(--banner-background-color);
+}
+
+.experience-title {
+  float: left;
+}
+
+.experience-title + * {
+  clear: both;
+}
+
+.time-period {
+  float: right;
+  margin: 0;
+}
+
+.project-picture {
+  width: 60%;
+  margin: 0 20%;
+}
+
+.tags span {
+  border-radius: 0.3em;
+  background-color: #ffffff01;
+  border: 1px solid var(--border-color);
+  padding: 0.3em;
+  margin: 0.1em;
+}
+
+.main-container, .sub-container {
+  border-radius: 1em;
+  background-color: var(--background-color);
+  border: 2px solid var(--border-color);
+  padding: 0.8em;
+  margin: 1em 0;
+  box-shadow: 0px 0px 5px 1px #8882;
+}
+
+h3, h4 {
+  margin: 0.1em 0;
+}
+
+a {
+  color: var(--text-color);
+  display: inline-block;
+  border-radius: 0.4em;
+}
+
+a:not([href^="mailto:"]), a:visited:not([href^="mailto:"]), a:active:not([href^="mailto:"]) {
+  background-color: var(--button-background-color);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:not([href^="mailto:"]) {
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+a:hover[href^="mailto:"] {
+  color: var(--alt-text-color);
+}
+
+a:hover:not([href^="mailto:"]) {
+  box-shadow: 0px 0px 5px 1px var(--alt-text-color);
+}
+
+a:active:not([href^="mailto:"]) {
+  box-shadow: 0px 0px 5px 1px var(--alt-text-color);
+  color: var(--alt-text-color);
+}
+
+@media only screen and (max-width: 600px) {
+}
